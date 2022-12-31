@@ -1,7 +1,7 @@
-import React from "react";
+import React, { FC, ReactElement } from "react";
 import { ListProps } from "./obj.types";
 
-const List = ({ people }: ListProps) => {
+const List: FC<ListProps> = ({ people }: ListProps): ReactElement => {
   return (
     <>
       {people.map((person) => {
